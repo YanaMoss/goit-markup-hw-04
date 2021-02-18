@@ -7,6 +7,7 @@
   --secondary-bcd-color--: #f5f4fa;
   --dark-bcd-color--: #2f303a;
   --primary-gap--: 30px;
+  --icon-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -156,8 +157,6 @@ img {
 }
 
 .phone {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,8 +240,6 @@ img {
 
 .icon-social {
   margin: auto;
-  width: 20px;
-  height: 20px;
   background-repeat: no-repeat;
 }
 
