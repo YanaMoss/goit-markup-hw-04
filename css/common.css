@@ -68,7 +68,9 @@ img {
 .product-list,
 .team-list,
 .filtres,
-.works {
+.works,
+.footer-content,
+.social {
   display: flex;
 }
 
@@ -125,12 +127,17 @@ img {
 }
 
 .contacts-link {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--primary-text-color--);
+  background-position: center;
 }
 
 .contacts-link:hover,
@@ -138,27 +145,24 @@ img {
   color: var(--accent-color--);
 }
 
-.e-mail::before {
-  display: inline-block;
-  content: "";
+.envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url("../images/decorative/envelope.svg");
+  fill: currentColor;
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.phone::before {
-  display: inline-block;
-  content: "";
+.phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url("../images/decorative/Vector.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  fill: currentColor;
 }
 
 /* footer */
@@ -196,4 +200,57 @@ img {
 
 .contacts-list {
   margin-top: 9px;
+}
+
+.join {
+  margin-left: 70px;
+  color: #ffffff;
+}
+
+.footer-title {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.list-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-social {
+  padding: 0;
+  border: none;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.footer .icon-social {
+  fill: var(--white-color--);
+}
+
+.link-social:hover {
+  fill: var(--white-color--);
+  background-color: var(--accent-color--);
 }
