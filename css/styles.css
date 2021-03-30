@@ -177,6 +177,10 @@ img {
   background-color: var(--dark-bcd-color--);
 }
 
+.footer-content {
+  align-items: baseline;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -207,7 +211,6 @@ img {
 }
 
 .footer-title {
-  padding-top: 12px;
   padding-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -281,6 +284,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color--);
+}
+
+.hero-title::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  font-size: inherit;
+  color: tomato;
 }
 
 .hero-button {
